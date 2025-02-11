@@ -18,16 +18,17 @@ body, html {
     flex-direction: column;
     align-items: center;
 }
-canvas {
-    width: 1440px; /* Set canvas width manually */
-    margin: 0 auto; /* Center the canvas horizontally */
-    display: block; /* Ensure proper centering */
-}
+
+
+    
 </style>
 <script src="https://unpkg.com/@rive-app/canvas@latest"></script>
 </head>
 <body>
-<canvas id="riveCanvas"></canvas>
+
+    <canvas id="riveCanvas" width="1500" height="2000"
+         style="width: 1440px; height: 1440px; max-width: 100%; object-fit: contain">
+ </canvas>
 <div id="widthDisplay"></div>
 <script>
     let riveInstance, widthNumInput;
