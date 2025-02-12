@@ -59,10 +59,10 @@ canvas {
 
     // Initialize Rive
     riveInstance = new rive.Rive({
-        src: 'kida_hero.riv', // Ensure this file name is correct
+        src: 'layouts.riv', // Ensure this file name is correct
         canvas: document.getElementById('riveCanvas'),
         autoplay: true,
-        artboard: 'myartboard', // Ensure this artboard name is correct
+        artboard: 'Artboard', // Ensure this artboard name is correct
         stateMachines: 'State Machine 1', // Ensure this state machine name is correct
         onLoad: () => {
             const inputs = riveInstance.stateMachineInputs('State Machine 1'); // Ensure this state machine name is correct
