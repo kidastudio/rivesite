@@ -12,7 +12,7 @@ body, html {
     font-family: Arial, sans-serif;
     overflow-x: hidden; /* Prevent horizontal scrolling */
     overflow-y: auto;   /* Allow vertical scrolling */
-
+    background-color: #060606;
 
     display: flex;
     flex-direction: column;
@@ -59,10 +59,10 @@ canvas {
 
     // Initialize Rive
     riveInstance = new rive.Rive({
-        src: 'layouts.riv', // Ensure this file name is correct
+        src: 'kida_hero_reponsive.riv', // Ensure this file name is correct
         canvas: document.getElementById('riveCanvas'),
         autoplay: true,
-        artboard: 'Artboard', // Ensure this artboard name is correct
+        artboard: 'myartboard', // Ensure this artboard name is correct
         stateMachines: 'State Machine 1', // Ensure this state machine name is correct
         onLoad: () => {
             const inputs = riveInstance.stateMachineInputs('State Machine 1'); // Ensure this state machine name is correct
